@@ -2,112 +2,79 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by  harsh pandey</title>
+  <title>CoronaVirus Timeline</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Final Form with CSS</title>
-  <link rel="stylesheet" href="./form.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="navbar">
+    <div id="navbar">
   <div class="container">
     <ul>
-      <li><a href="#">Home</a></li>
-
-      <li><a href="index.html">Timeline</a></li>
-      <li><a href="#">Corona Testing</a></li>
+      <li><a href="home.html">Home</a></li>
+      
+      <li><a href="#">Timeline</a></li>
+      <li><a href="coronatesting.html">Corona Testing</a></li>
     </ul>
   </div>
 </div>
-
-<div class="container">
-	<h1>Information Form</h1>
-
-<form>
-  <div class="flex-container">
-  <div>
-  <p>
-    <label>
-      Full Name:<br></label>
-    <input type="text" placeholder="Enter Name">
-  </p>
-  <p>
-    <label>
-      Phone Number:<br>
-    <input type="number" placeholder="123456789">
-    </label>
-  </p>
-    <p>
-    <label>
-      Age:<br>
-    <input type="number" placeholder="1-100">
-    </label>
-  </p>
-  <p>
-    <label>
-      Email:<br>
-    <input type="email" placeholder="something@email.com">
-    </label>
-  </p>
-  <p>
-    <label>
-      Profession:<br>
-    <input type="text" placeholder="student/private/doctor">
-    </label>
-  </p>
-  <p>
-    <label>
-      Date Of Birth:<br></label>
-    <input type="date">
-  </p>
-  <p>
-    <label>
-      Any of the following country travelled outside in the last 30 days ?<br> </label>
-      <select>
-					<option value="" disabled selected>City</option>
-          <option>China</option>
-          <option>UK</option>
-          <option>USA</option>
-          <option>Thailand</option>
-          <option>Nepal</option>
-          <option>Canada</option>
-          <option>None of These</option>
-      </select>
-
-  </p>
-  <p>
-		<label>Ready to volunteer in the time of need ?<br> </label>
-			<input type="radio" name="radio" value="Radio 1" id="rad1"><label for="rad1">Yes</label><br>
-			<input type="radio" name="radio" value="Radio 2" id="rad2"><label for="rad2">No</label><br>
-  </p>
-  <p>
-    	<label>Do you have any of the following symptoms ?<br> </label>
-    <input type="checkbox" name="checkbox" value="Checkbox 1" id="cb1"><label for="cb1">Fever</label><br>
-		<input type="checkbox" name="checkbox" value="Checkbox 2" id="cb2"><label for="cb2">Dry Cough</label><br>
-		<input type="checkbox" name="checkbox" value="Checkbox 3" id="cb3"><label for="cb3">Cold</label><br>
-    <input type="checkbox" name="checkbox" value="Checkbox 3" id="cb4"><label for="cb3">Breathing Issues</label><br>
-    <input type="checkbox" name="checkbox" value="Checkbox 3" id="cb5"><label for="cb3">Chest Pain</label><br>
-  </p>
-  <p><br><br>
-    <input type="submit">
-		<input type="reset">
-  </p>
+<!-- partial:index.partial.html -->
+<div class="intro">
+  <div class="container">
+    <h1>How did the coronavirus spread ?</h1>
+  </div>
 </div>
-</form>
+
+<div class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>December 8</time> A patient in the city of Wuhan sought medical help for pneumonia-like symptoms.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>December 29</time> Local hospitals in Hubei report the first four cases of a “pneumonia of unknown etiology.”
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>December 31</time> Wuhan Municipal Health Authorities report a string of pneumonia-like cases in Wuhan, China.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>January 1</time>The seafood market (Huanan Seafood Wholesale Market) that was identified as a suspected center of the outbreak is closed.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>January 3</time> China officially notifies the WHO of an outbreak.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>January 13</time> Thailand reports its first case, a sixty-one year old woman who did not visit the seafood market.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>January 14</time> Wuhan implements screening measures for travelers leaving the city at airports, railway stations, and other passenger terminals.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>February 1</time>First Cases Appear in United States and Europe;
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>February 3</time> First Cases Appear in Many More Countries; Travel Bans Spread
+      </div>
+    </li>
+  </ul>
 </div>
 <!-- partial -->
-
-</body>
-</html>
-<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
 </html>
