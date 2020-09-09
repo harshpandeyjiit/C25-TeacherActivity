@@ -24,8 +24,7 @@ function submitForm(e){
     var profession =getInputVal('profession');
     var dateofbirth =getInputVal('dateofbirth');
     var centers=deploystates(state);
-    saveMessages(name,mobile,age,email,profession,dateofbirth,centers)
-    document.getElementById("result").innerHTML ="<br>"+centers[0]+"<br>"+centers[1]+"<br>"+centers[2]+"<br>"+centers[3]+"<br>"+centers[4]+"<br>";
+    saveMessages(name,mobile,age,email,profession,dateofbirth,centers);
 }
 
 function deploystates(state)
@@ -55,7 +54,7 @@ function getInputVal(id){
     return document.getElementById(id).value;
 }
 
-function saveMessages(name,mobile,age,email,profession,dateofbirth){
+function saveMessages(name,mobile,age,email,profession,dateofbirth,state){
     var newMessagesRef = messagesRef.push();
     newMessagesRef.set({
         name:name,
@@ -63,6 +62,8 @@ function saveMessages(name,mobile,age,email,profession,dateofbirth){
         age:age,
         email:email,
         profession:profession,
+        state:state,
         dateofbirth:dateofbirth
     })
+    document.getElementById("result").innerHTML ="<br>"+state[0]+"<br>"+state[1]+"<br>"+state[2]+"<br>"+state[3]+"<br>"+state[4]+"<br>";;
 }
